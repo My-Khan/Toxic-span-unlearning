@@ -6,7 +6,7 @@
     {"name": "Khan, Wahab", "affiliation": "University of Science and Technology Bannu"}
   ],
   "access_right": "open",
-  "license": "MIT",
+  "license": "mit",
   "keywords": [
     "machine unlearning",
     "toxic span detection",
@@ -16,7 +16,7 @@
     "ToxicSpans"
   ],
   "related_identifiers": [
-    {"identifier": "10.18653/v1/2022.acl-long.259", "relation": "isDerivedFrom", "resource_type": "publication-conferencepaper", "scheme": "doi"},
-    {"identifier": "https://github.com/ipavlopoulos/toxic_spans", "relation": "isDerivedFrom", "resource_type": "dataset", "scheme": "url"}
+    {"identifier": "10.18653/v1/2022.acl-long.259", "relation": "isDerivedFrom", "scheme": "doi"},
+    {"identifier": "https://github.com/ipavlopoulos/toxic_spans", "relation": "isDerivedFrom", "scheme": "url"}
   ]
 }
