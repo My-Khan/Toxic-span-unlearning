@@ -1,0 +1,100 @@
+[    0.0 min] device: cuda | smoke: False | output folder: /kaggle/working/run_Qwen2.5-0.5B_full
+[    0.0 min] train/trial/test: 12879 1609 1611
+[    1.3 min] benign train / eval comments: 703 95
+[    1.3 min] lexicon size: 120 | examples: ['arse', 'asinine', 'ass', 'assad', 'asses', 'asshole', 'assholes', 'balls']
+[    1.7 min] detector F1 by threshold: {0.02: 0.549, 0.05: 0.576, 0.1: 0.611, 0.2: 0.59, 0.3: 0.546, 0.5: 0.446} -> using 0.1
+[    1.7 min] computing occlusion scores for 7754 training comments (a few minutes)
+[   19.7 min] signal gold: 5.7% of tokens flagged as forget
+[   19.7 min] signal lex: 4.1% of tokens flagged as forget
+[   19.7 min] signal det: 5.1% of tokens flagged as forget
+[   19.8 min] toxic prompts: 500 | benign prompts: 82
+[   19.8 min] model Qwen2.5-0.5B: type qwen2, vocab 151936, ln|V| 11.93, ascent cap 10.1, LoRA on ['q_proj', 'k_proj', 'v_proj', 'o_proj']
+[   20.0 min] original epoch 0 step 0/1697 loss 4.733
+[   21.6 min] original epoch 0 step 200/1697 loss 4.259
+[   23.2 min] original epoch 0 step 400/1697 loss 3.878
+[   24.8 min] original epoch 0 step 600/1697 loss 3.672
+[   26.4 min] original epoch 0 step 800/1697 loss 4.212
+[   28.1 min] original epoch 0 step 1000/1697 loss 4.066
+[   29.7 min] original epoch 0 step 1200/1697 loss 4.054
+[   31.3 min] original epoch 0 step 1400/1697 loss 3.977
+[   32.9 min] original epoch 0 step 1600/1697 loss 3.762
+[   33.7 min] original epoch 1 step 0/1697 loss 3.289
+[   35.3 min] original epoch 1 step 200/1697 loss 3.584
+[   36.9 min] original epoch 1 step 400/1697 loss 3.490
+[   38.5 min] original epoch 1 step 600/1697 loss 3.379
+[   40.1 min] original epoch 1 step 800/1697 loss 3.570
+[   41.7 min] original epoch 1 step 1000/1697 loss 3.681
+[   43.3 min] original epoch 1 step 1200/1697 loss 3.894
+[   44.9 min] original epoch 1 step 1400/1697 loss 3.379
+[   46.6 min] original epoch 1 step 1600/1697 loss 3.805
+[   47.4 min] reference epoch 0 step 0/87 loss 4.055
+[   48.1 min] reference epoch 1 step 0/87 loss 3.671
+[   50.7 min] original {'span_nll': 4.268, 'nonspan_nll': 3.903, 'benign_ppl': 48.774, 'toxicity': 0.669, 'toxic>0.5': 0.696, 'lexical_leak': 0.172, 'semantic_leak': 0.64, 'toxic2>0.5': 0.716, 'toxicity2': 0.713, 'fluency_nll': 1.492, 'repeat3': 0.276, 'empty_rate': 0.0, 'avg_words': 19.87, 'distinct1': 0.582, 'benign_toxicity': 0.57, 'benign_toxic2>0.5': 0.634, 'benign_fluency_nll': 1.7, 'benign_repeat3': 0.243, 'benign_empty': 0.0, 'benign_distinct1': 0.592}
+[   52.5 min] reference {'span_nll': 5.174, 'nonspan_nll': 4.066, 'benign_ppl': 52.396, 'toxicity': 0.314, 'toxic>0.5': 0.31, 'lexical_leak': 0.058, 'semantic_leak': 0.272, 'toxic2>0.5': 0.346, 'toxicity2': 0.352, 'fluency_nll': 1.492, 'repeat3': 0.163, 'empty_rate': 0.0, 'avg_words': 20.688, 'distinct1': 0.679, 'benign_toxicity': 0.159, 'benign_toxic2>0.5': 0.207, 'benign_fluency_nll': 1.644, 'benign_repeat3': 0.17, 'benign_empty': 0.0, 'benign_distinct1': 0.654}
+[   52.5 min] targets (span NLL): [5.2, 7.2, 9.2, 11.3] | retrain-reference level: 5.17 | ln|V|: 11.93
+[   57.0 min] sample_t5.2_s0: span 5.14 nonspan 3.98 ppl 51.6 toxic 31.4% empty 0.0%
+[   60.3 min] sample_t7.2_s0: span 6.98 nonspan 4.35 ppl 67.8 toxic 5.0% empty 0.0%
+[   62.7 min] sample_t11.3_s0: span 10.80 nonspan 7.02 ppl 502.8 toxic 1.2% empty 0.0%
+[   65.6 min] token_gold_t5.2_s0: span 5.23 nonspan 3.93 ppl 49.9 toxic 29.2% empty 0.0%
+[   68.5 min] token_gold_t7.2_s0: span 6.71 nonspan 4.04 ppl 54.7 toxic 5.2% empty 0.0%
+[   71.1 min] token_gold_t9.2_s0: span 8.32 nonspan 4.17 ppl 61.3 toxic 2.0% empty 0.0%
+[   74.0 min] token_gold_t11.3_s0: span 10.17 nonspan 4.29 ppl 68.2 toxic 1.6% empty 0.0%
+[   76.8 min] token_lex_t5.2_s0: span 5.14 nonspan 3.93 ppl 49.7 toxic 33.2% empty 0.0%
+[   79.7 min] token_lex_t7.2_s0: span 6.78 nonspan 4.05 ppl 55.4 toxic 6.2% empty 0.0%
+[   82.2 min] token_lex_t9.2_s0: span 8.71 nonspan 4.22 ppl 64.3 toxic 2.0% empty 0.0%
+[   85.4 min] token_lex_t11.3_s0: span 10.14 nonspan 4.27 ppl 67.5 toxic 1.6% empty 0.0%
+[   88.3 min] token_det_t5.2_s0: span 5.20 nonspan 3.94 ppl 49.9 toxic 28.4% empty 0.0%
+[   91.2 min] token_det_t7.2_s0: span 6.71 nonspan 4.06 ppl 55.2 toxic 6.4% empty 0.0%
+[   93.8 min] token_det_t9.2_s0: span 8.32 nonspan 4.21 ppl 63.0 toxic 1.8% empty 0.0%
+[   98.0 min] token_det_t11.3_s0: span 10.12 nonspan 4.31 ppl 68.6 toxic 1.4% empty 0.0%
+[  102.6 min] sample_t5.2_s1: span 5.15 nonspan 3.99 ppl 51.6 toxic 28.0% empty 0.0%
+[  106.2 min] sample_t9.2_s1: span 9.29 nonspan 5.66 ppl 182.8 toxic 1.8% empty 0.0%
+[  110.8 min] sample_t11.3_s1: span 12.12 nonspan 9.36 ppl 621.8 toxic 0.8% empty 0.0%
+[  113.7 min] token_gold_t5.2_s1: span 5.20 nonspan 3.93 ppl 49.8 toxic 30.2% empty 0.0%
+[  116.6 min] token_gold_t7.2_s1: span 6.68 nonspan 4.04 ppl 54.5 toxic 6.2% empty 0.0%
+[  119.4 min] token_gold_t9.2_s1: span 8.63 nonspan 4.21 ppl 62.9 toxic 2.0% empty 0.0%
+[  122.1 min] token_gold_t11.3_s1: span 10.23 nonspan 4.32 ppl 69.1 toxic 1.8% empty 0.0%
+[  124.9 min] token_lex_t5.2_s1: span 5.13 nonspan 3.93 ppl 49.6 toxic 34.6% empty 0.0%
+[  127.8 min] token_lex_t7.2_s1: span 6.80 nonspan 4.05 ppl 55.0 toxic 5.4% empty 0.0%
+[  130.3 min] token_lex_t9.2_s1: span 8.43 nonspan 4.19 ppl 62.0 toxic 2.0% empty 0.0%
+[  133.5 min] token_lex_t11.3_s1: span 10.59 nonspan 4.33 ppl 70.3 toxic 1.0% empty 0.0%
+[  136.4 min] token_det_t5.2_s1: span 5.11 nonspan 3.93 ppl 49.5 toxic 30.8% empty 0.0%
+[  139.5 min] token_det_t7.2_s1: span 6.81 nonspan 4.06 ppl 55.2 toxic 5.2% empty 0.0%
+[  142.0 min] token_det_t9.2_s1: span 8.35 nonspan 4.22 ppl 62.8 toxic 2.6% empty 0.0%
+[  147.4 min] token_det_t11.3_s1: span 10.17 nonspan 4.29 ppl 66.2 toxic 2.4% empty 0.0%
+[  152.4 min] sample_t5.2_s2: span 5.16 nonspan 3.99 ppl 51.8 toxic 27.6% empty 0.0%
+[  155.6 min] sample_t7.2_s2: span 7.34 nonspan 4.44 ppl 73.3 toxic 3.4% empty 0.0%
+[  157.9 min] sample_t9.2_s2: span 9.87 nonspan 5.95 ppl 211.0 toxic 1.2% empty 0.0%
+[  162.0 min] sample_t11.3_s2: span 11.60 nonspan 8.49 ppl 394.1 toxic 2.2% empty 0.0%
+[  164.9 min] token_gold_t5.2_s2: span 5.15 nonspan 3.93 ppl 49.7 toxic 32.2% empty 0.0%
+[  168.0 min] token_gold_t7.2_s2: span 7.03 nonspan 4.07 ppl 56.0 toxic 4.6% empty 0.0%
+[  170.5 min] token_gold_t9.2_s2: span 8.74 nonspan 4.23 ppl 63.9 toxic 2.2% empty 0.0%
+[  174.2 min] token_gold_t11.3_s2: span 10.88 nonspan 4.33 ppl 70.6 toxic 1.6% empty 0.0%
+[  177.1 min] token_lex_t5.2_s2: span 5.29 nonspan 3.94 ppl 50.1 toxic 29.0% empty 0.0%
+[  180.0 min] token_lex_t7.2_s2: span 7.09 nonspan 4.08 ppl 56.6 toxic 3.6% empty 0.0%
+[  182.4 min] token_lex_t9.2_s2: span 8.69 nonspan 4.24 ppl 64.5 toxic 1.8% empty 0.0%
+[  186.4 min] token_lex_t11.3_s2: span 10.42 nonspan 4.25 ppl 66.8 toxic 2.8% empty 0.0%
+[  189.3 min] token_det_t5.2_s2: span 5.13 nonspan 3.93 ppl 49.6 toxic 34.6% empty 0.0%
+[  192.4 min] token_det_t7.2_s2: span 6.82 nonspan 4.06 ppl 55.5 toxic 6.4% empty 0.0%
+[  195.0 min] token_det_t9.2_s2: span 8.53 nonspan 4.24 ppl 64.5 toxic 1.4% empty 0.0%
+[  199.0 min] token_det_t11.3_s2: span 10.26 nonspan 4.33 ppl 69.0 toxic 0.6% empty 0.0%
+[  199.0 min] all runs finished: ['sample_s0', 'sample_s1', 'sample_s2', 'token_det_s0', 'token_det_s1', 'token_det_s2', 'token_gold_s0', 'token_gold_s1', 'token_gold_s2', 'token_lex_s0', 'token_lex_s1', 'token_lex_s2']
+[  199.2 min] figures written to /kaggle/working/run_Qwen2.5-0.5B_full/figs
+[  199.2 min] DONE. Download: /kaggle/working/results_Qwen2.5-0.5B_full.zip (7.3 MB)
+[    0.4 min] train/trial/test: 12879 1609 1611
+[    2.0 min] benign train / eval comments: 703 95
+[    2.0 min] lexicon size: 120 | examples: ['arse', 'asinine', 'ass', 'assad', 'asses', 'asshole', 'assholes', 'balls']
+[    2.5 min] detector F1 by threshold: {0.02: 0.549, 0.05: 0.576, 0.1: 0.611, 0.2: 0.59, 0.3: 0.546, 0.5: 0.446} -> using 0.1
+[    2.6 min] signal gold: 5.7% of tokens flagged as forget
+[    2.6 min] signal lex: 4.1% of tokens flagged as forget
+[    2.6 min] signal det: 5.1% of tokens flagged as forget
+[    2.6 min] signal rand: 7.8% of tokens flagged as forget
+[    2.6 min] toxic prompts: 500 | benign prompts: 82
+[    2.6 min] model Qwen2.5-0.5B: type qwen2, vocab 151936, ln|V| 11.93, ascent cap 10.1, LoRA on ['q_proj', 'k_proj', 'v_proj', 'o_proj']
+[    2.6 min] targets (span NLL): [5.2, 7.2, 9.2, 11.3] | retrain-reference level: 5.17 | ln|V|: 11.93
+[   11.0 min] token_rand_t5.2_s0: span 5.17 nonspan 3.98 ppl 51.9 toxic 34.4% empty 0.0%
+[   24.9 min] token_rand_t5.2_s1: span 5.10 nonspan 3.97 ppl 51.1 toxic 35.2% empty 0.0%
+[   32.9 min] token_rand_t7.2_s1: span 6.64 nonspan 4.23 ppl 60.2 toxic 12.6% empty 0.0%
+[   42.0 min] token_rand_t5.2_s2: span 5.13 nonspan 3.98 ppl 52.1 toxic 32.0% empty 0.0%
+[   47.7 min] all runs finished: ['sample_s0', 'sample_s1', 'sample_s2', 'token_det_s0', 'token_det_s1', 'token_det_s2', 'token_gold_s0', 'token_gold_s1', 'token_gold_s2', 'token_lex_s0', 'token_lex_s1', 'token_lex_s2', 'token_rand_s0', 'token_rand_s1', 'token_rand_s2']
+[   47.9 min] figures written to /kaggle/working/run_Qwen2.5-0.5B_full/figs

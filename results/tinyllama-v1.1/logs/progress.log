@@ -1,0 +1,61 @@
+[    0.0 min] device: cuda | smoke: False | output folder: /kaggle/working/run_TinyLlama_v1.1_full
+[    0.1 min] train/trial/test: 12879 1609 1611
+[    1.5 min] benign train / eval comments: 703 95
+[    1.5 min] lexicon size: 120 | examples: ['arse', 'asinine', 'ass', 'assad', 'asses', 'asshole', 'assholes', 'balls']
+[    2.0 min] detector F1 by threshold: {0.02: 0.549, 0.05: 0.576, 0.1: 0.611, 0.2: 0.59, 0.3: 0.546, 0.5: 0.446} -> using 0.1
+[    2.0 min] computing occlusion scores for 7754 training comments (a few minutes)
+[   20.4 min] signal gold: 7.2% of tokens flagged as forget
+[   20.4 min] signal lex: 5.6% of tokens flagged as forget
+[   20.4 min] signal det: 6.3% of tokens flagged as forget
+[   20.4 min] signal rand: 8.1% of tokens flagged as forget
+[   20.4 min] toxic prompts: 500 | benign prompts: 82
+[   20.4 min] model TinyLlama_v1.1: type llama, vocab 32000, ln|V| 10.37, ascent cap 8.8, LoRA on ['q_proj', 'k_proj', 'v_proj', 'o_proj']
+[   21.0 min] original epoch 0 step 0/1697 loss 3.481
+[   24.5 min] original epoch 0 step 200/1697 loss 2.721
+[   28.0 min] original epoch 0 step 400/1697 loss 3.295
+[   31.5 min] original epoch 0 step 600/1697 loss 2.595
+[   35.0 min] original epoch 0 step 800/1697 loss 2.803
+[   38.5 min] original epoch 0 step 1000/1697 loss 3.171
+[   41.9 min] original epoch 0 step 1200/1697 loss 2.788
+[   45.4 min] original epoch 0 step 1400/1697 loss 3.506
+[   48.8 min] original epoch 0 step 1600/1697 loss 3.045
+[   50.5 min] original epoch 1 step 0/1697 loss 3.115
+[   54.0 min] original epoch 1 step 200/1697 loss 2.924
+[   57.5 min] original epoch 1 step 400/1697 loss 2.833
+[   61.0 min] original epoch 1 step 600/1697 loss 2.832
+[   64.4 min] original epoch 1 step 800/1697 loss 3.065
+[   67.9 min] original epoch 1 step 1000/1697 loss 3.279
+[   71.4 min] original epoch 1 step 1200/1697 loss 2.688
+[   74.9 min] original epoch 1 step 1400/1697 loss 2.867
+[   78.4 min] original epoch 1 step 1600/1697 loss 2.976
+[   80.1 min] reference epoch 0 step 0/87 loss 3.153
+[   81.8 min] reference epoch 1 step 0/87 loss 2.714
+[   86.9 min] original {'span_nll': 2.619, 'nonspan_nll': 3.142, 'benign_ppl': 22.438, 'toxicity': 0.573, 'toxic>0.5': 0.598, 'lexical_leak': 0.176, 'semantic_leak': 0.527, 'toxic2>0.5': 0.654, 'toxicity2': 0.648, 'fluency_nll': 1.467, 'repeat3': 0.113, 'empty_rate': 0.008, 'avg_words': 15.944, 'distinct1': 0.741, 'benign_toxicity': 0.33, 'benign_toxic2>0.5': 0.427, 'benign_fluency_nll': 1.608, 'benign_repeat3': 0.107, 'benign_empty': 0.0, 'benign_distinct1': 0.739}
+[   90.3 min] reference {'span_nll': 3.073, 'nonspan_nll': 3.199, 'benign_ppl': 22.041, 'toxicity': 0.253, 'toxic>0.5': 0.242, 'lexical_leak': 0.058, 'semantic_leak': 0.202, 'toxic2>0.5': 0.334, 'toxicity2': 0.33, 'fluency_nll': 1.483, 'repeat3': 0.06, 'empty_rate': 0.032, 'avg_words': 16.512, 'distinct1': 0.808, 'benign_toxicity': 0.092, 'benign_toxic2>0.5': 0.122, 'benign_fluency_nll': 1.643, 'benign_repeat3': 0.072, 'benign_empty': 0.0, 'benign_distinct1': 0.768}
+[   90.4 min] targets (span NLL): [3.1, 5.3, 7.5, 9.6] | retrain-reference level: 3.07 | ln|V|: 10.37
+[   99.7 min] sample_t3.1_s0: span 3.23 nonspan 3.30 ppl 26.0 toxic 22.8% empty 0.8%
+[  107.0 min] sample_t5.3_s0: span 5.58 nonspan 4.33 ppl 48.0 toxic 3.2% empty 1.6%
+[  111.4 min] sample_t7.5_s0: span 7.31 nonspan 5.63 ppl 86.8 toxic 0.8% empty 0.2%
+[  116.7 min] sample_t9.6_s0: span 9.79 nonspan 8.11 ppl 193.3 toxic 3.4% empty 0.4%
+[  122.5 min] token_gold_t3.1_s0: span 3.25 nonspan 3.18 ppl 23.1 toxic 19.6% empty 3.0%
+[  129.1 min] token_gold_t5.3_s0: span 5.60 nonspan 3.48 ppl 29.2 toxic 1.2% empty 3.8%
+[  133.7 min] token_gold_t7.5_s0: span 6.94 nonspan 3.61 ppl 32.3 toxic 0.4% empty 2.6%
+[  139.2 min] token_gold_t9.6_s0: span 8.73 nonspan 3.70 ppl 33.3 toxic 0.8% empty 1.2%
+[  145.0 min] token_det_t3.1_s0: span 3.19 nonspan 3.18 ppl 22.9 toxic 19.8% empty 2.6%
+[  151.9 min] token_det_t5.3_s0: span 5.43 nonspan 3.46 ppl 28.9 toxic 1.2% empty 4.2%
+[  156.5 min] token_det_t7.5_s0: span 6.85 nonspan 3.63 ppl 32.7 toxic 0.6% empty 3.8%
+[  165.4 min] token_det_t9.6_s0: span 9.11 nonspan 3.62 ppl 32.2 toxic 0.6% empty 1.0%
+[  174.1 min] sample_t3.1_s1: span 3.19 nonspan 3.26 ppl 25.0 toxic 20.4% empty 0.8%
+[  182.1 min] sample_t5.3_s1: span 6.54 nonspan 4.96 ppl 64.6 toxic 0.8% empty 0.8%
+[  186.5 min] sample_t7.5_s1: span 7.62 nonspan 5.75 ppl 81.3 toxic 0.4% empty 0.2%
+[  195.5 min] sample_t9.6_s1: span 9.83 nonspan 8.45 ppl 105.6 toxic 8.6% empty 0.0%
+[  201.4 min] token_gold_t3.1_s1: span 3.26 nonspan 3.18 ppl 23.1 toxic 20.6% empty 2.2%
+[  207.6 min] token_gold_t5.3_s1: span 5.14 nonspan 3.41 ppl 27.9 toxic 1.6% empty 3.8%
+[  212.5 min] token_gold_t7.5_s1: span 7.18 nonspan 3.71 ppl 35.3 toxic 0.4% empty 3.4%
+[  219.0 min] token_gold_t9.6_s1: span 8.81 nonspan 3.63 ppl 32.7 toxic 0.2% empty 1.8%
+[  224.8 min] token_det_t3.1_s1: span 3.21 nonspan 3.18 ppl 23.0 toxic 19.8% empty 2.4%
+[  231.8 min] token_det_t5.3_s1: span 5.45 nonspan 3.49 ppl 29.5 toxic 1.2% empty 4.8%
+[  236.7 min] token_det_t7.5_s1: span 7.12 nonspan 3.67 ppl 33.9 toxic 0.4% empty 4.8%
+[  246.1 min] token_det_t9.6_s1: span 9.08 nonspan 3.62 ppl 32.7 toxic 0.4% empty 3.4%
+[  246.1 min] all runs finished: ['sample_s0', 'sample_s1', 'token_det_s0', 'token_det_s1', 'token_gold_s0', 'token_gold_s1']
+[  246.3 min] figures written to /kaggle/working/run_TinyLlama_v1.1_full/figs

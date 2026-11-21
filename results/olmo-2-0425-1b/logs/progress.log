@@ -1,0 +1,60 @@
+[    0.0 min] device: cuda | smoke: False | output folder: /kaggle/working/run_OLMo-2-0425-1B_full
+[    0.0 min] train/trial/test: 12879 1609 1611
+[    1.5 min] benign train / eval comments: 703 95
+[    1.5 min] lexicon size: 120 | examples: ['arse', 'asinine', 'ass', 'assad', 'asses', 'asshole', 'assholes', 'balls']
+[    2.1 min] detector F1 by threshold: {0.02: 0.549, 0.05: 0.576, 0.1: 0.611, 0.2: 0.59, 0.3: 0.546, 0.5: 0.446} -> using 0.1
+[    2.1 min] computing occlusion scores for 7754 training comments (a few minutes)
+[   25.0 min] signal gold: 5.7% of tokens flagged as forget
+[   25.0 min] signal lex: 4.1% of tokens flagged as forget
+[   25.0 min] signal det: 5.1% of tokens flagged as forget
+[   25.0 min] signal rand: 7.8% of tokens flagged as forget
+[   25.0 min] toxic prompts: 500 | benign prompts: 82
+[   25.0 min] model OLMo-2-0425-1B: type olmo2, vocab 100352, ln|V| 11.52, ascent cap 9.8, LoRA on ['q_proj', 'k_proj', 'v_proj', 'o_proj']
+[   25.6 min] original epoch 0 step 0/1697 loss 3.765
+[   30.6 min] original epoch 0 step 200/1697 loss 3.254
+[   35.5 min] original epoch 0 step 400/1697 loss 3.294
+[   40.5 min] original epoch 0 step 600/1697 loss 3.533
+[   45.4 min] original epoch 0 step 800/1697 loss 3.078
+[   50.4 min] original epoch 0 step 1000/1697 loss 3.412
+[   55.3 min] original epoch 0 step 1200/1697 loss 3.224
+[   60.3 min] original epoch 0 step 1400/1697 loss 3.430
+[   65.2 min] original epoch 0 step 1600/1697 loss 3.199
+[   67.6 min] original epoch 1 step 0/1697 loss 3.273
+[   72.6 min] original epoch 1 step 200/1697 loss 3.697
+[   77.5 min] original epoch 1 step 400/1697 loss 3.415
+[   82.4 min] original epoch 1 step 600/1697 loss 3.484
+[   87.2 min] original epoch 1 step 800/1697 loss 3.730
+[   92.1 min] original epoch 1 step 1000/1697 loss 3.469
+[   97.0 min] original epoch 1 step 1200/1697 loss 3.210
+[  102.0 min] original epoch 1 step 1400/1697 loss 3.634
+[  106.8 min] original epoch 1 step 1600/1697 loss 3.174
+[  109.3 min] reference epoch 0 step 0/87 loss 3.754
+[  111.8 min] reference epoch 1 step 0/87 loss 3.070
+[  118.8 min] original {'span_nll': 3.575, 'nonspan_nll': 3.447, 'benign_ppl': 31.672, 'toxicity': 0.657, 'toxic>0.5': 0.682, 'lexical_leak': 0.208, 'semantic_leak': 0.609, 'toxic2>0.5': 0.746, 'toxicity2': 0.738, 'fluency_nll': 1.553, 'repeat3': 0.211, 'empty_rate': 0.0, 'avg_words': 21.218, 'distinct1': 0.611, 'benign_toxicity': 0.475, 'benign_toxic2>0.5': 0.622, 'benign_fluency_nll': 1.636, 'benign_repeat3': 0.161, 'benign_empty': 0.0, 'benign_distinct1': 0.655}
+[  123.4 min] reference {'span_nll': 4.238, 'nonspan_nll': 3.511, 'benign_ppl': 31.792, 'toxicity': 0.366, 'toxic>0.5': 0.372, 'lexical_leak': 0.124, 'semantic_leak': 0.299, 'toxic2>0.5': 0.434, 'toxicity2': 0.438, 'fluency_nll': 1.505, 'repeat3': 0.162, 'empty_rate': 0.0, 'avg_words': 22.22, 'distinct1': 0.677, 'benign_toxicity': 0.129, 'benign_toxic2>0.5': 0.171, 'benign_fluency_nll': 1.555, 'benign_repeat3': 0.139, 'benign_empty': 0.0, 'benign_distinct1': 0.689}
+[  123.4 min] targets (span NLL): [4.2, 6.4, 8.6, 10.8] | retrain-reference level: 4.24 | ln|V|: 11.52
+[  138.7 min] sample_t4.2_s0: span 4.22 nonspan 3.50 ppl 32.7 toxic 36.4% empty 0.0%
+[  148.5 min] sample_t6.4_s0: span 6.37 nonspan 3.81 ppl 40.1 toxic 4.8% empty 0.0%
+[  155.7 min] sample_t10.8_s0: span 10.11 nonspan 5.23 ppl 91.5 toxic 0.8% empty 0.2%
+[  163.9 min] token_gold_t4.2_s0: span 4.19 nonspan 3.46 ppl 31.7 toxic 38.8% empty 0.0%
+[  173.8 min] token_gold_t6.4_s0: span 6.26 nonspan 3.59 ppl 34.7 toxic 8.0% empty 0.0%
+[  180.7 min] token_gold_t8.6_s0: span 8.31 nonspan 3.73 ppl 38.5 toxic 2.4% empty 0.0%
+[  187.2 min] token_gold_t10.8_s0: span 10.32 nonspan 3.88 ppl 43.3 toxic 1.6% empty 0.0%
+[  195.9 min] token_det_t4.2_s0: span 4.21 nonspan 3.46 ppl 31.8 toxic 35.4% empty 0.0%
+[  205.2 min] token_det_t6.4_s0: span 6.04 nonspan 3.57 ppl 34.4 toxic 9.8% empty 0.0%
+[  212.7 min] token_det_t8.6_s0: span 8.08 nonspan 3.71 ppl 38.1 toxic 3.2% empty 0.0%
+[  219.9 min] token_det_t10.8_s0: span 9.81 nonspan 3.85 ppl 41.9 toxic 1.2% empty 0.0%
+[  234.5 min] sample_t4.2_s1: span 4.21 nonspan 3.50 ppl 32.6 toxic 32.8% empty 0.0%
+[  244.9 min] sample_t6.4_s1: span 6.48 nonspan 3.86 ppl 40.8 toxic 6.8% empty 0.0%
+[  250.7 min] sample_t8.6_s1: span 8.09 nonspan 4.22 ppl 50.8 toxic 3.2% empty 0.0%
+[  258.0 min] sample_t10.8_s1: span 10.84 nonspan 5.64 ppl 107.9 toxic 0.6% empty 0.0%
+[  266.1 min] token_gold_t4.2_s1: span 4.28 nonspan 3.46 ppl 31.8 toxic 35.6% empty 0.0%
+[  275.4 min] token_gold_t6.4_s1: span 6.11 nonspan 3.58 ppl 34.6 toxic 8.2% empty 0.0%
+[  282.2 min] token_gold_t8.6_s1: span 7.95 nonspan 3.72 ppl 38.2 toxic 3.4% empty 0.0%
+[  289.3 min] token_gold_t10.8_s1: span 10.04 nonspan 3.86 ppl 42.7 toxic 1.0% empty 0.0%
+[  297.5 min] token_det_t4.2_s1: span 4.18 nonspan 3.46 ppl 31.7 toxic 38.6% empty 0.0%
+[  307.3 min] token_det_t6.4_s1: span 5.97 nonspan 3.58 ppl 34.5 toxic 8.4% empty 0.0%
+[  314.8 min] token_det_t8.6_s1: span 7.97 nonspan 3.72 ppl 38.4 toxic 3.4% empty 0.0%
+[  322.0 min] token_det_t10.8_s1: span 9.86 nonspan 3.86 ppl 42.5 toxic 1.2% empty 0.0%
+[  322.0 min] all runs finished: ['sample_s0', 'sample_s1', 'token_det_s0', 'token_det_s1', 'token_gold_s0', 'token_gold_s1']
+[  322.2 min] figures written to /kaggle/working/run_OLMo-2-0425-1B_full/figs

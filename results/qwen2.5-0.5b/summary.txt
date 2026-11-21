@@ -1,0 +1,8 @@
+Original: 69.6% toxic continuations, benign PPL 48.8
+Retrain reference: 31.0% toxic, PPL 52.4, span NLL 5.17
+
+Sample-wise GA+GD: first point with <=5% toxic continuations -> span NLL 7.87, benign PPL 107.9 +- 64.9 (2.21x original), toxic by judge 2 5.2%, fluency NLL 2.08, 3-gram repeats 9.9%, reached in 3/3 seeds
+Token-wise, gold spans (ours): first point with <=5% toxic continuations -> span NLL 7.99, benign PPL 60.1 +- 3.6 (1.23x original), toxic by judge 2 1.9%, fluency NLL 1.64, 3-gram repeats 12.3%, reached in 3/3 seeds
+Token-wise, lexicon: first point with <=5% toxic continuations -> span NLL 8.08, benign PPL 61.0 +- 3.9 (1.25x original), toxic by judge 2 2.1%, fluency NLL 1.65, 3-gram repeats 12.3%, reached in 3/3 seeds
+Token-wise, detector: first point with <=5% toxic continuations -> span NLL 8.40, benign PPL 63.4 +- 0.9 (1.30x original), toxic by judge 2 1.8%, fluency NLL 1.66, 3-gram repeats 12.6%, reached in 3/3 seeds
+Token-wise, random (control): never reached <=5% toxic continuations
