@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below, together with the paper and the ToxicSpans dataset."
+title: "Forgetting the Words, Keeping the Sentence: code, derived data and results for token-level unlearning of toxic spans"
+type: software
+authors:
+  - family-names: Khan
+    given-names: Wahab
+    affiliation: "University of Science and Technology Bannu"
+version: 1.0.0
+license: MIT
+keywords:
+  - machine unlearning
+  - toxic span detection
+  - language model detoxification
+  - token-level objectives
+  - parameter-efficient fine-tuning
+references:
+  - type: conference-paper
+    title: "From the Detection of Toxic Spans in Online Discussions to the Analysis of Toxic-to-Civil Transfer"
+    authors:
+      - family-names: Pavlopoulos
+        given-names: John
+      - family-names: Laugier
+        given-names: Léo
+      - family-names: Xenos
+        given-names: Alexandros
+      - family-names: Sorensen
+        given-names: Jeffrey
+      - family-names: Androutsopoulos
+        given-names: Ion
+    collection-title: "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)"
+    year: 2022
+    doi: 10.18653/v1/2022.acl-long.259

@@ -1,0 +1,22 @@
+{
+  "title": "Forgetting the Words, Keeping the Sentence: code, derived data and results for token-level unlearning of toxic spans",
+  "upload_type": "software",
+  "description": "<p>Code, derived data and per-run results for the paper \"Forgetting the Words, Keeping the Sentence: Token-Level Unlearning of Toxic Spans in Large Language Models\". The release contains the exact data split, majority-vote spans, the 120-word lexicon and occlusion-detector scores derived from the ToxicSpans dataset (Pavlopoulos et al., 2022), scripts that rebuild and verify them, and the measurements behind every table and figure for Qwen2.5-0.5B, TinyLlama v1.1 and OLMo-2-0425-1B.</p><p>Content warning: the data concerns abusive online comments, and the lexicon and logs contain offensive words. Model adapters and raw generations are not included.</p><p>Code: MIT licence. Derived data, results and figures: CC BY 4.0. The ToxicSpans source data is not redistributed and remains under CC0 1.0.</p>",
+  "creators": [
+    {"name": "Khan, Wahab", "affiliation": "University of Science and Technology Bannu"}
+  ],
+  "access_right": "open",
+  "license": "MIT",
+  "keywords": [
+    "machine unlearning",
+    "toxic span detection",
+    "language model detoxification",
+    "token-level objectives",
+    "parameter-efficient fine-tuning",
+    "ToxicSpans"
+  ],
+  "related_identifiers": [
+    {"identifier": "10.18653/v1/2022.acl-long.259", "relation": "isDerivedFrom", "resource_type": "publication-conferencepaper", "scheme": "doi"},
+    {"identifier": "https://github.com/ipavlopoulos/toxic_spans", "relation": "isDerivedFrom", "resource_type": "dataset", "scheme": "url"}
+  ]
+}

@@ -1,0 +1,6 @@
+# Scripts in scripts/
+numpy>=1.24
+pandas>=2.0
+# Optional: recompute the benign sets (python scripts/build_derived_data.py --detoxify)
+# detoxify
+# The notebooks additionally need torch, transformers and peft (see notebooks/README.md).

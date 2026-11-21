@@ -1,0 +1,16 @@
+# Source data is downloaded, not committed
+data/raw/*.csv
+data/rebuilt/
+
+# Never commit model weights, raw generations or unmasked examples
+*.ckpt
+*.safetensors
+*.bin
+*.pkl
+**/gen/
+*RAW_do_not_publish*
+
+# Python and notebooks
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
